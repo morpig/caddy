@@ -27,6 +27,9 @@ var (
 	supportedUpToTLS12 = []uint16{VersionTLS10, VersionTLS11, VersionTLS12}
 	supportedOnlyTLS12 = []uint16{VersionTLS12}
 	supportedOnlyTLS13 = []uint16{VersionTLS13}
+)
+
+const (
 	VersionTLS10 = 0x0301
 	VersionTLS11 = 0x0302
 	VersionTLS12 = 0x0303
