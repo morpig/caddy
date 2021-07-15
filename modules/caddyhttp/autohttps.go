@@ -408,7 +408,7 @@ func (app *App) makeRedirRoute(redirToPort uint, matcherSet MatcherSet) Route {
 		MatcherSets: []MatcherSet{matcherSet},
 		Handlers: []MiddlewareHandler{
 			StaticResponse{
-				StatusCode: WeakString(strconv.Itoa(http.StatusPermanentRedirect)),
+				StatusCode: WeakString(strconv.Itoa(http.StatusMovedPermanently)),
 				Headers: http.Header{
 					"Location": []string{redirTo},
 				},
